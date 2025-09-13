@@ -1,152 +1,300 @@
-# Bangla News Scraper# Bangla News Scraper
+# Bangla News Scraper# Bangla News Scraper# Bangla News Scraper
 
-🎨 **Beautiful CLI** - Rich, colorful interface with progr| Site | S##| 📰## 📁 Output StructureDaily Ittefaq | ✅ Active | ~3- 📚 Educational/research purposes+ | Complete article extraction |
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)| � More sites | 🚧 Coming | - | Easy to extend |📁 Output Structureatus | Articles/Day | Feat- ✅ Resp## 👨‍💻 Author
 
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-
-[![Beautiful](https://img.shields.io/badge/CLI-Beautiful-pink.svg)](https://github.com/rayatchowdhury/BD-Newspaper-Scraper)**Rayat Chowdhury** - [GitHub](https://github.com/rayatchowdhury)s `robots.txt`
-
-- ⏰ Default 1s delay between requests
-
-> A modern, beautiful CLI tool for scraping Bangladeshi news websites with style ✨- 🛡️ Responsible scraping practices
-
-- 📚 Educational/research purposes |
-
-![Demo](https://img.shields.io/badge/🎬-Demo-brightgreen) *Experience the beautiful CLI interface in action*|------|--------|--------------|----------|
-
-| 🇧🇩 Prothom Alo | ✅ Active | ~50+ | Full content, images, metadata |
-
-## 🚀 Quick Start| 📰 Daily Ittefaq | ✅ Active | ~30+ | Complete article extraction |
-
-| 🔄 More sites | 🚧 Coming | - | Easy to extend |ndicators  
-
-```bash🌐 **Multi-Site** - Prothom Alo, Daily Ittefaq, and easily extensible  
-
-# Clone & Install⚡ **Fast & Smart** - Intelligent caching & rate limiting  
-
-git clone https://github.com/rayatchowdhury/BD-Newspaper-Scraper.git💾 **Rich Output** - JSON/CSV with complete article data  
-
-cd BD-Newspaper-Scraper🛡️ **Robust** - Error handling, validation, and retry mechanisms  
-
-pip install -r requirements.txt🔧 **Configurable** - Customizable delays, output formats, and cachingthon](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)🎨 **Beautiful CLI** - Rich, colorful interface with progr| Site | S##| 📰## 📁 Output StructureDaily Ittefaq | ✅ Active | ~3- 📚 Educational/research purposes+ | Complete article extraction |
 
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-# Start scraping with style![![Beautiful](https://img.shields.io/badge/CLI-Beautiful-pink.svg)](https://github.com/rayatchowdhury/BD-Newspaper-Scraper)
+[![Beautiful](https://img.shields.io/badge/CLI-Beautiful-pink.svg)](https://github.com/rayatchowdhury/BD-Newspaper-Scraper)[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)| � More sites | 🚧 Coming | - | Easy to extend |📁 Output Structureatus | Articles/Day | Feat- ✅ Resp## 👨‍💻 Author
+
+
+
+> A modern, beautiful CLI tool for scraping Bangladeshi news websites with style ✨[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+
+
+![Demo](https://img.shields.io/badge/🎬-Demo-brightgreen) *Experience the beautiful CLI interface in action*[![Beautiful](https://img.shields.io/badge/CLI-Beautiful-pink.svg)](https://github.com/rayatchowdhury/BD-Newspaper-Scraper)**Rayat Chowdhury** - [GitHub](https://github.com/rayatchowdhury)s `robots.txt`
+
+
+
+## 🚀 Quick Start- ⏰ Default 1s delay between requests
+
+
+
+```bash> A modern, beautiful CLI tool for scraping Bangladeshi news websites with style ✨- 🛡️ Responsible scraping practices
+
+# Clone & Install
+
+git clone https://github.com/rayatchowdhury/BD-Newspaper-Scraper.git- 📚 Educational/research purposes |
+
+cd BD-Newspaper-Scraper
+
+pip install -r requirements.txt![Demo](https://img.shields.io/badge/🎬-Demo-brightgreen) *Experience the beautiful CLI interface in action*|------|--------|--------------|----------|
+
+
+
+# Start scraping with style!| 🇧🇩 Prothom Alo | ✅ Active | ~50+ | Full content, images, metadata |
 
 python main.py --run --site=all --limit=5 --output=json
 
-```> A modern, beautiful CLI tool for scraping Bangladeshi news websites with style ✨
+```## 🚀 Quick Start| 📰 Daily Ittefaq | ✅ Active | ~30+ | Complete article extraction |
 
 
 
-## ✨ Features![Demo](https://img.shields.io/badge/🎬-Demo-brightgreen) *Experience the beautiful CLI interface in action*
+## ✨ Features| 🔄 More sites | 🚧 Coming | - | Easy to extend |ndicators  
 
 
 
-🎨 **Beautiful CLI** - Rich, colorful interface with progress indicators  ## 🚀 Quick Start
+🎨 **Beautiful CLI** - Rich, colorful interface with progress indicators  ```bash🌐 **Multi-Site** - Prothom Alo, Daily Ittefaq, and easily extensible  
 
 🌐 **Multi-Site** - Prothom Alo, Daily Ittefaq, and easily extensible  
 
-⚡ **Fast & Smart** - Intelligent caching & rate limiting  ```bash
+⚡ **Fast & Smart** - Intelligent caching & rate limiting  # Clone & Install⚡ **Fast & Smart** - Intelligent caching & rate limiting  
 
-💾 **Rich Output** - JSON/CSV with complete article data  # Clone & Install
+💾 **Rich Output** - JSON/CSV with complete article data  
 
-🛡️ **Robust** - Error handling, validation, and retry mechanisms  git clone https://github.com/rayatchowdhury/BD-Newspaper-Scraper.git
-
-🔧 **Configurable** - Customizable delays, output formats, and cachingcd BD-Newspaper-Scraper
-
-pip install -r requirements.txt
-
-## 📋 Usage
-
-# Start scraping with style!
-
-### Basic Commandspython main.py --run --site=all --limit=5 --output=json
-
-```bash```
-
-# Scrape from all sites
-
-python main.py --run --site=all --limit=10## ✨ Features
-
-
-
-# Single site with verbose output  🎨 **Beautiful CLI** - Rich, colorful interface with progress indicators  
-
-python main.py --run --site=prothom-alo --limit=5 --verbose🌐 **Multi-Site** - Prothom Alo, Daily Ittefaq, and easily extensible  
-
-⚡ **Fast & Smart** - Intelligent caching & rate limiting  
-
-# Get all available articles� **Rich Output** - JSON/CSV with complete article data  
-
-python main.py --run --site=ittefaq --limit=0 --output=csv🛡️ **Robust** - Error handling, validation, and retry mechanisms  
+🛡️ **Robust** - Error handling, validation, and retry mechanisms  git clone https://github.com/rayatchowdhury/BD-Newspaper-Scraper.git💾 **Rich Output** - JSON/CSV with complete article data  
 
 🔧 **Configurable** - Customizable delays, output formats, and caching
 
-# Short form
+cd BD-Newspaper-Scraper🛡️ **Robust** - Error handling, validation, and retry mechanisms  
 
-python main.py -r -s all -l 5 -o json## � Usage
+## 📋 Usage
+
+pip install -r requirements.txt🔧 **Configurable** - Customizable delays, output formats, and cachingthon](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
+
+### Basic Commands
+
+```bash[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+# Scrape from all sites
+
+python main.py --run --site=all --limit=10# Start scraping with style![![Beautiful](https://img.shields.io/badge/CLI-Beautiful-pink.svg)](https://github.com/rayatchowdhury/BD-Newspaper-Scraper)
+
+
+
+# Single site with verbose output  python main.py --run --site=all --limit=5 --output=json
+
+python main.py --run --site=prothom-alo --limit=5 --verbose
+
+```> A modern, beautiful CLI tool for scraping Bangladeshi news websites with style ✨
+
+# Get all available articles
+
+python main.py --run --site=ittefaq --limit=0 --output=csv
+
+
+
+# Short form## ✨ Features![Demo](https://img.shields.io/badge/🎬-Demo-brightgreen) *Experience the beautiful CLI interface in action*
+
+python main.py -r -s all -l 5 -o json
+
+```
+
+
+
+### Advanced Options🎨 **Beautiful CLI** - Rich, colorful interface with progress indicators  ## 🚀 Quick Start
+
+```bash
+
+# Cache management🌐 **Multi-Site** - Prothom Alo, Daily Ittefaq, and easily extensible  
+
+python main.py --cache-stats     # View cache info
+
+python main.py --clear-cache     # Clear all cache⚡ **Fast & Smart** - Intelligent caching & rate limiting  ```bash
+
+
+
+# Custom configuration💾 **Rich Output** - JSON/CSV with complete article data  # Clone & Install
+
+python main.py -r -s all -l 5 --delay 2.0 --output-dir ./news
+
+```🛡️ **Robust** - Error handling, validation, and retry mechanisms  git clone https://github.com/rayatchowdhury/BD-Newspaper-Scraper.git
+
+
+
+## 📖 Python API🔧 **Configurable** - Customizable delays, output formats, and cachingcd BD-Newspaper-Scraper
+
+
+
+```pythonpip install -r requirements.txt
+
+from bangla_news_scraper import ProthomAloScraper, save_to_json
+
+## 📋 Usage
+
+# Quick scraping
+
+scraper = ProthomAloScraper(delay=1.0)# Start scraping with style!
+
+articles = scraper.scrape_articles(limit=10)
+
+save_to_json(articles, 'prothom-alo', './output')### Basic Commandspython main.py --run --site=all --limit=5 --output=json
+
+
+
+# Work with articles```bash```
+
+for article in articles:
+
+    print(f"📰 {article.title}")# Scrape from all sites
+
+    print(f"✍️  {article.author}")
+
+    print(f"📅 {article.date}")python main.py --run --site=all --limit=10## ✨ Features
+
+```
+
+
+
+## 🎯 Supported Sites
+
+# Single site with verbose output  🎨 **Beautiful CLI** - Rich, colorful interface with progress indicators  
+
+| Site | Status | Articles/Day | Features |
+
+|------|--------|--------------|----------|python main.py --run --site=prothom-alo --limit=5 --verbose🌐 **Multi-Site** - Prothom Alo, Daily Ittefaq, and easily extensible  
+
+| 🇧🇩 Prothom Alo | ✅ Active | ~50+ | Full content, images, metadata |
+
+| 📰 Daily Ittefaq | ✅ Active | ~30+ | Complete article extraction |⚡ **Fast & Smart** - Intelligent caching & rate limiting  
+
+| 🔄 More sites | 🚧 Coming | - | Easy to extend |
+
+# Get all available articles� **Rich Output** - JSON/CSV with complete article data  
+
+## 📁 Output Structure
+
+python main.py --run --site=ittefaq --limit=0 --output=csv🛡️ **Robust** - Error handling, validation, and retry mechanisms  
+
+```
+
+output/🔧 **Configurable** - Customizable delays, output formats, and caching
+
+├── json/
+
+│   ├── 2025-09-14_prothom-alo.json  # Structured JSON data# Short form
+
+│   └── 2025-09-14_ittefaq.json      # Rich metadata included
+
+└── csv/python main.py -r -s all -l 5 -o json## � Usage
+
+    ├── 2025-09-14_prothom-alo.csv   # Spreadsheet format
+
+    └── 2025-09-14_ittefaq.csv       # Easy analysis```
 
 ```
 
 ### Basic Commands
 
+## 🛠️ CLI Options
+
 ### Advanced Options```bash
 
-```bash# Scrape from all sites
+| Flag | Short | Default | Description |
 
-# Cache managementpython main.py --run --site=all --limit=10
+|------|-------|---------|-------------|```bash# Scrape from all sites
 
-python main.py --cache-stats     # View cache info
+| `--run` | `-r` | - | 🚀 Start scraping |
 
-python main.py --clear-cache     # Clear all cache# Single site with verbose output  
+| `--site` | `-s` | `prothom-alo` | 🌐 Target site or `all` |# Cache managementpython main.py --run --site=all --limit=10
 
-python main.py --run --site=prothom-alo --limit=5 --verbose
+| `--limit` | `-l` | `5` | 📊 Articles per site |
 
-# Custom configuration
+| `--output` | `-o` | `json` | 💾 Format (`json`/`csv`) |python main.py --cache-stats     # View cache info
 
-python main.py -r -s all -l 5 --delay 2.0 --output-dir ./news# Get all available articles
+| `--verbose` | `-v` | - | 🔍 Detailed logging |
 
-```python main.py --run --site=ittefaq --limit=0 --output=csv
+| `--delay` | - | `1.0` | ⏱️ Request delay (seconds) |python main.py --clear-cache     # Clear all cache# Single site with verbose output  
 
 
+
+## 🧪 Developmentpython main.py --run --site=prothom-alo --limit=5 --verbose
+
+
+
+```bash# Custom configuration
+
+# Setup development environment
+
+python -m venv venvpython main.py -r -s all -l 5 --delay 2.0 --output-dir ./news# Get all available articles
+
+source venv/bin/activate  # Windows: venv\Scripts\activate
+
+pip install -r requirements.txt```python main.py --run --site=ittefaq --limit=0 --output=csv
+
+
+
+# Run tests
+
+pytest
 
 ## 📖 Python API# Short form
 
-python main.py -r -s all -l 5 -o json
+# Test CLI
 
-```python```
-
-from bangla_news_scraper import ProthomAloScraper, save_to_json
-
-### Advanced Options
-
-# Quick scraping```bash
-
-scraper = ProthomAloScraper(delay=1.0)# Cache management
-
-articles = scraper.scrape_articles(limit=10)python main.py --cache-stats     # View cache info
-
-save_to_json(articles, 'prothom-alo', './output')python main.py --clear-cache     # Clear all cache
-
-
-
-# Work with articles# Custom configuration
-
-for article in articles:python main.py -r -s all -l 5 --delay 2.0 --output-dir ./news
-
-    print(f"📰 {article.title}")```
-
-    print(f"✍️  {article.author}")
-
-    print(f"📅 {article.date}")## � Usage
+python main.py --helppython main.py -r -s all -l 5 -o json
 
 ```
 
-```python
+```python```
+
+## 🤝 Contributing
+
+from bangla_news_scraper import ProthomAloScraper, save_to_json
+
+1. 🍴 Fork the repo
+
+2. 🌟 Create feature branch### Advanced Options
+
+3. ✅ Add tests
+
+4. 📝 Update docs# Quick scraping```bash
+
+5. 🚀 Submit PR
+
+scraper = ProthomAloScraper(delay=1.0)# Cache management
+
+## ⚖️ Ethics & Legal
+
+articles = scraper.scrape_articles(limit=10)python main.py --cache-stats     # View cache info
+
+- ✅ Respects `robots.txt`
+
+- ⏰ Default 1s delay between requestssave_to_json(articles, 'prothom-alo', './output')python main.py --clear-cache     # Clear all cache
+
+- 🛡️ Responsible scraping practices
+
+- 📚 Educational/research purposes
+
+
+
+## 👨‍💻 Author# Work with articles# Custom configuration
+
+
+
+**Rayat Chowdhury** - [GitHub](https://github.com/rayatchowdhury)for article in articles:python main.py -r -s all -l 5 --delay 2.0 --output-dir ./news
+
+
+
+---    print(f"📰 {article.title}")```
+
+
+
+<div align="center">    print(f"✍️  {article.author}")
+
+
+
+**⭐ Star this repo if you found it useful!**    print(f"📅 {article.date}")## � Usage
+
+
+
+[🐛 Report Bug](https://github.com/rayatchowdhury/BD-Newspaper-Scraper/issues) • [✨ Request Feature](https://github.com/rayatchowdhury/BD-Newspaper-Scraper/issues) • [📖 Documentation](https://github.com/rayatchowdhury/BD-Newspaper-Scraper)```
+
+
+
+</div>```python
 
 ## 🎯 Supported Sitesfrom bangla_news_scraper import ProthomAloScraper, save_to_json
 
