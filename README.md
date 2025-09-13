@@ -1,6 +1,10 @@
-# 🇧🇩 Bangla News Scraper
+# Bangla News Scraper
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
+[![Python](https://img.shields.io/badge/Python-3.8+-| Site | Status | Articles/Day | Features |
+|------|--------|--------------|----------|
+| 📰 Prothom Alo | ✅ Active | ~50+ | Full content, images, metadata |
+| 📰 Daily Ittefaq | ✅ Active | ~30+ | Complete article extraction |
+| 🔄 More sites | 🚧 Coming | - | Easy to extend |svg)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Beautiful](https://img.shields.io/badge/CLI-Beautiful-pink.svg)](https://github.com/rayatchowdhury/BD-Newspaper-Scraper)
 

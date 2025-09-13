@@ -103,31 +103,53 @@ def save_to_csv(
 
 
 def display_articles_summary(data: Union[List[Article], ScrapingResult]) -> None:
-    """Display a summary of scraped articles"""
+    """Display a summary of scraped articles using rich styling"""
+    from rich.console import Console
+    from rich.panel import Panel
+    from rich.table import Table
+    from rich import box
+    
+    console = Console()
     articles = data.articles if isinstance(data, ScrapingResult) else data
     
     if not articles:
-        print("No articles found.")
+        console.print("❌ No articles found.", style="red")
         return
     
-    print(f"\n{'='*60}")
-    print(f"SCRAPED ARTICLES SUMMARY ({len(articles)} articles)")
+    # Create summary header
     if isinstance(data, ScrapingResult):
-        print(f"Site: {data.site_name}")
-        print(f"Success Rate: {data.get_success_rate():.1f}%")
+        title = f"📰 {data.site_name.upper()} - {len(articles)} Articles"
+        header_info = f"Success Rate: {data.get_success_rate():.1f}%"
         if data.duration_seconds:
-            print(f"Duration: {data.duration_seconds:.2f} seconds")
-    print(f"{'='*60}")
+            header_info += f" | Duration: {data.duration_seconds:.2f}s"
+    else:
+        title = f"📰 SCRAPED ARTICLES - {len(articles)} Articles"
+        header_info = ""
+    
+    # Create articles table
+    table = Table(show_header=False, box=box.SIMPLE, padding=(0, 1))
+    table.add_column("Info", style="dim white", width=15)
+    table.add_column("Value", style="white")
     
     for i, article in enumerate(articles, 1):
-        print(f"\n{i}. {article.get_title_preview()}")
-        print(f"   Author: {article.author or 'Unknown'}")
-        print(f"   Date: {article.date or 'Unknown'}")
-        print(f"   URL: {article.url or 'Unknown'}")
-        print(f"   Image: {'Yes' if article.image_url else 'No'}")
-        print(f"   Content length: {len(article.content or '')} characters")
+        table.add_row(f"[bold cyan]{i}. Title[/bold cyan]", article.get_title_preview())
+        table.add_row("   Author", article.author or 'Unknown')
+        table.add_row("   Date", str(article.date or 'Unknown'))
+        table.add_row("   URL", article.url or 'Unknown')
+        table.add_row("   Image", '✅ Yes' if article.image_url else '❌ No')
+        table.add_row("   Content", f"{len(article.content or '')} characters")
+        if i < len(articles):  # Add separator between articles
+            table.add_row("", "")
     
-    print(f"\n{'='*60}")
+    # Display the panel
+    panel = Panel(
+        table,
+        title=title,
+        subtitle=header_info if header_info else None,
+        border_style="green",
+        padding=(1, 2)
+    )
+    console.print(panel)
 
 
 def validate_articles(articles: List[Article]) -> List[Article]:

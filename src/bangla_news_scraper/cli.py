@@ -101,9 +101,11 @@ def scrape_single_site(site_name: str, limit: int, delay: float, output: str, ou
               help='Clear cache before running')
 @click.option('--cache-stats', is_flag=True,
               help='Show cache statistics')
-def main(run, site, limit, output, output_dir, delay, verbose, no_cache, clear_cache, cache_stats):
+@click.option('--version', is_flag=True,
+              help='Show version information')
+def main(run, site, limit, output, output_dir, delay, verbose, no_cache, clear_cache, cache_stats, version):
     """
-    🇧🇩 Bangla News Scraper - Enhanced Version
+    Bangla News Scraper - Enhanced Version
     
     A powerful tool to scrape news articles from Bangladeshi news websites with
     modern architecture, intelligent caching, and beautiful CLI interface.
@@ -122,6 +124,19 @@ def main(run, site, limit, output, output_dir, delay, verbose, no_cache, clear_c
     
     # Display startup banner
     print_startup_message()
+    
+    # Handle version request
+    if version:
+        try:
+            from . import __version__, __author__
+            print_info(f"Version: {__version__}", "📋")
+            print_info(f"Author: {__author__}", "👨‍💻")
+            print_info("A modern Python package for scraping Bangladeshi news websites", "📰")
+        except ImportError:
+            print_info("Version: 1.1.0 (Enhanced)", "📋")
+            print_info("Author: Rayat Chowdhury", "👨‍💻")
+            print_info("A modern Python package for scraping Bangladeshi news websites", "📰")
+        return
     
     # Initialize cache
     cache = ArticleCache()
@@ -236,27 +251,6 @@ def main(run, site, limit, output, output_dir, delay, verbose, no_cache, clear_c
         print_error(f"Unexpected error: {e}")
         logger.error(f"Unexpected error: {e}")
         raise click.ClickException(str(e))
-
-
-@click.command()
-def version():
-    """Show version information"""
-    from . import __version__, __author__
-    print_startup_message()
-    print_info(f"Version: {__version__}", "📋")
-    print_info(f"Author: {__author__}", "👨‍💻")
-    print_info("A modern Python package for scraping Bangladeshi news websites", "📰")
-
-
-@click.group()
-def cli():
-    """Bangla News Scraper CLI - Enhanced Version"""
-    pass
-
-
-# Add commands to group
-cli.add_command(main, name='scrape')
-cli.add_command(version)
 
 
 if __name__ == '__main__':

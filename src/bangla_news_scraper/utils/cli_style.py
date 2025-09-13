@@ -32,7 +32,7 @@ def print_banner():
     """Display the application banner"""
     banner = Panel(
         Align.center(
-            Text("🇧🇩 BANGLA NEWS SCRAPER", style=f"bold {CLITheme.PRIMARY}")
+            Text("BANGLA NEWS SCRAPER", style=f"bold {CLITheme.PRIMARY}")
         ),
         box=box.DOUBLE,
         border_style=CLITheme.PRIMARY,
