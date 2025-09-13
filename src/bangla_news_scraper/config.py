@@ -83,3 +83,12 @@ class Config:
     def get_site_names(cls) -> List[str]:
         """Get list of available site names"""
         return list(cls.SITES.keys())
+    
+    @classmethod
+    def get_scraper_class(cls, site_name: str):
+        """Get the scraper class for a given site"""
+        scraper_mapping = {
+            'prothom-alo': 'ProthomAloScraper',
+            'ittefaq': 'IttefaqScraper'
+        }
+        return scraper_mapping.get(site_name)
