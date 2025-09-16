@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Environment
+.env
+.venv/
+
+# FastAPI static files (if any)
+static/
+
+# IDE/editor
+.vscode/
+.idea/
